@@ -4,8 +4,9 @@ def erstelle_dictionaries(alphabet, p, generator):
     return verschluesselung_dict, entschluesselung_dict
 
 def verschluesseln(wort, versch_dict):
-    wort = wort.upper()
+    wort = wort.upper() 
     return [versch_dict[char] for char in wort if char in versch_dict]
 
 def entschluesseln(code_liste, entsch_dict):
     return ''.join(entsch_dict[code] for code in code_liste)
+
